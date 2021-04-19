@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -45,20 +46,23 @@ namespace HZZ_Kategorije
             dateTimePickerDate.MaxDate = datum;
             btnReturn.BackColor = Color.FromArgb(41, 161, 211);
             DataGridViewImageColumn buttonDodaj = new DataGridViewImageColumn();
-            buttonDodaj.Image = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\.NET_Projekt_Kovac\HZZ_Kovac\Slike\plus.png");
+            var path3 = new DirectoryInfo(Application.StartupPath).Parent.Parent.Parent.FullName;
+            buttonDodaj.Image = Image.FromFile(path3+ @"\Slike\plus.png");
             buttonDodaj.Width = 20;
             buttonDodaj.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewFreeJobs.Columns.Add(buttonDodaj);
             dataGridViewFreeJobs.AutoGenerateColumns = false;
 
             DataGridViewImageColumn buttonObrisi = new DataGridViewImageColumn();
-            buttonObrisi.Image = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\.NET_Projekt_Kovac\HZZ_Kovac\Slike\bin.png");
+            var path4 = new DirectoryInfo(Application.StartupPath).Parent.Parent.Parent.FullName;
+            buttonObrisi.Image = Image.FromFile(path4 + @"\Slike\bin.png");
             buttonObrisi.Width = 20;
             buttonObrisi.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewRadnaMjestaBP.Columns.Add(buttonObrisi);
 
             DataGridViewImageColumn buttonAzuriraj = new DataGridViewImageColumn();
-            buttonAzuriraj.Image = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\.NET_Projekt_Kovac\HZZ_Kovac\Slike\updateNew.png");
+            var path5 = new DirectoryInfo(Application.StartupPath).Parent.Parent.Parent.FullName;
+            buttonAzuriraj.Image = Image.FromFile(path5 + @"\Slike\updateNew.png");
             buttonAzuriraj.Width = 20;
             buttonAzuriraj.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewRadnaMjestaBP.Columns.Add(buttonAzuriraj);

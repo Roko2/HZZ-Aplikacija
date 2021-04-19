@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,13 +37,15 @@ namespace HZZ_Kategorije
             datePickerDatum.MaxDate=datum;
             tabControl1.SelectedIndexChanged += new EventHandler(tabControl1_SelectedIndexChanged);
             DataGridViewImageColumn buttonObrisi = new DataGridViewImageColumn();
-            buttonObrisi.Image = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\.NET_Projekt_Kovac\HZZ_Kovac\Slike\bin.png");
+            var path1 = new DirectoryInfo(Application.StartupPath).Parent.Parent.Parent.FullName;
+            buttonObrisi.Image = Bitmap.FromFile(path1 + "\\Slike\\bin.png");
             buttonObrisi.Width = 20;
             buttonObrisi.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewBPCategory.Columns.Add(buttonObrisi);
 
             DataGridViewImageColumn buttonAzuriraj = new DataGridViewImageColumn();
-            buttonAzuriraj.Image = Image.FromFile(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Desktop) + @"\.NET_Projekt_Kovac\HZZ_Kovac\Slike\updateNew.png");
+            var path2 = new DirectoryInfo(Application.StartupPath).Parent.Parent.Parent.FullName;
+            buttonAzuriraj.Image = Bitmap.FromFile(path2 + "\\Slike\\updateNew.png");
             buttonAzuriraj.Width = 20;
             buttonAzuriraj.AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
             dataGridViewBPCategory.Columns.Add(buttonAzuriraj);

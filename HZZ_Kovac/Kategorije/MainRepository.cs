@@ -21,7 +21,7 @@ namespace DataAccess
         public List<Category> GetCategories()
         {
             int ID = 1;
-            string json = GetRestMethod("https://data.gov.hr/api/2/rest/package/slobodna-radna-mjesta-po-zanimanju");
+            string json = GetRestMethod("http://193.198.242.10/api/2/rest/package/slobodna-radna-mjesta-po-zanimanju");
             List<Category> Kategorije = new List<Category>();
             JObject Json = JObject.Parse(json);
             var oKategorije = Json["resources"].ToList();

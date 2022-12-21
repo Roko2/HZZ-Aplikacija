@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53C28F77-4A90-4B99-A6DD-AD74A282306D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HZZ_Kategorije</RootNamespace>
+    <AssemblyName>HZZ_Kategorije</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAzuriranjeKategorijeBP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAzuriranjeKategorijeBP.Designer.cs">
+      <DependentUpon>FormAzuriranjeKategorijeBP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAzuriranjeRadnogMjestaBP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAzuriranjeRadnogMjestaBP.Designer.cs">
+      <DependentUpon>FormAzuriranjeRadnogMjestaBP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrisanjeRadnogMjesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrisanjeRadnogMjesta.Designer.cs">
+      <DependentUpon>FormBrisanjeRadnogMjesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDodavanjeKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodavanjeKategorije.Designer.cs">
+      <DependentUpon>FormDodavanjeKategorije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDodavanjePosla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDodavanjePosla.Designer.cs">
+      <DependentUpon>FormDodavanjePosla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPotvrda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPotvrda.Designer.cs">
+      <DependentUpon>FormPotvrda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPotvrdaRadnogMjesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPotvrdaRadnogMjesta.Designer.cs">
+      <DependentUpon>FormPotvrdaRadnogMjesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatistikaNezaposleni.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistikaNezaposleni.Designer.cs">
+      <DependentUpon>FormStatistikaNezaposleni.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatistikaRadnaMjesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatistikaRadnaMjesta.Designer.cs">
+      <DependentUpon>FormStatistikaRadnaMjesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWebPoslovi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWebPoslovi.Designer.cs">
+      <DependentUpon>FormWebPoslovi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HZZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HZZ.Designer.cs">
+      <DependentUpon>HZZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLokacije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLokacije.Designer.cs">
+      <DependentUpon>FormLokacije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSlobodnaRadnaMjesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSlobodnaRadnaMjesta.Designer.cs">
+      <DependentUpon>FormSlobodnaRadnaMjesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBrisanjeKategorije.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBrisanjeKategorije.Designer.cs">
+      <DependentUpon>FormBrisanjeKategorije.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAzuriranjeKategorijeBP.resx">
+      <DependentUpon>FormAzuriranjeKategorijeBP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAzuriranjeRadnogMjestaBP.resx">
+      <DependentUpon>FormAzuriranjeRadnogMjestaBP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrisanjeRadnogMjesta.resx">
+      <DependentUpon>FormBrisanjeRadnogMjesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDodavanjeKategorije.resx">
+      <DependentUpon>FormDodavanjeKategorije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDodavanjePosla.resx">
+      <DependentUpon>FormDodavanjePosla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPotvrda.resx">
+      <DependentUpon>FormPotvrda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPotvrdaRadnogMjesta.resx">
+      <DependentUpon>FormPotvrdaRadnogMjesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatistikaNezaposleni.resx">
+      <DependentUpon>FormStatistikaNezaposleni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatistikaRadnaMjesta.resx">
+      <DependentUpon>FormStatistikaRadnaMjesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWebPoslovi.resx">
+      <DependentUpon>FormWebPoslovi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HZZ.resx">
+      <DependentUpon>HZZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLokacije.resx">
+      <DependentUpon>FormLokacije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSlobodnaRadnaMjesta.resx">
+      <DependentUpon>FormSlobodnaRadnaMjesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBrisanjeKategorije.resx">
+      <DependentUpon>FormBrisanjeKategorije.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Kategorije\DataAccess.csproj">
+      <Project>{35b1c0ca-4fbd-4f79-bad6-1a9732170f74}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
